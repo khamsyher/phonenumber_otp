@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:phonenumber_otp/number_screen.dart';
 import 'package:phonenumber_otp/upload.dart';
+import 'package:phonenumber_otp/upload_multiImagePicker/upload_multiImagePickerView.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const UploadImage(),
+      home: const MyImagePickerWidget(),
     );
   }
 }

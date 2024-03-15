@@ -6,7 +6,7 @@ Future<void> uploadProfileImage(File imageFile) async {
   try {
     var request = http.MultipartRequest(
       'POST',
-      Uri.parse('http://10.0.2.2:5000/api/addImage'),
+      Uri.parse('http:example/addImage'),
     );
     request.files.add(await http.MultipartFile.fromPath(
       'image',
